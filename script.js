@@ -1,96 +1,95 @@
 const QUESTIONS = [
   {
-    id: "ecosysteme",
-    question: "Floraly, c’est avant tout…",
+    id: "proposition_valeur",
+    question: "Quelle est la principale différenciation de Floraly face aux applications de diagnostic classiques ?",
     choices: [
-      "Un robot d’arrosage autonome sans application",
-      "Une boutique en ligne de plantes, sans suivi de données",
-      "Un écosystème (capteurs IoT + appli mobile + interface web)",
-      "Un simple calendrier d’arrosage, sans capteur",
+      "L'application est totalement gratuite et sans publicité",
+      "Elle remplace totalement l'utilisateur pour l'entretien",
+      "L'alliance d'un diagnostic continu par capteurs IoT et d'une dimension sociale gamifiée",
+      "Elle ne fonctionne que pour les plantes potagères alimentaires"
     ],
     answerIndex: 2,
     explanation:
-      "Le rapport présente Floraly comme un écosystème de suivi et d’accompagnement des plantes, basé sur des objets connectés, une application mobile et une interface web.",
+      "Contrairement aux applications qui offrent un diagnostic ponctuel par photo, Floraly propose un suivi hybride : des données matérielles en temps réel couplées à une communauté d'entraide et d'apprentissage[cite: 1971, 2048, 2257]."
   },
   {
-    id: "domaines",
-    question: "Sur quels grands domaines Floraly se positionne-t-il ?",
+    id: "cible_strategique",
+    question: "Qui est le 'Persona' cœur de cible identifié par l'étude marketing PACA ?",
     choices: [
-      "La mobilité urbaine, la santé et le tourisme",
-      "La crypto, la finance et les jeux vidéo",
-      "La livraison de repas, le sport et la musique",
-      "Plantes, domotique/IoT, éducatif & interactif",
-    ],
-    answerIndex: 3,
-    explanation:
-      "Floraly met en avant trois domaines : bien-être des plantes, domotique/IoT, et une dimension éducative et interactive.",
-  },
-  {
-    id: "innovation",
-    question: "Quelle est l’innovation principale mise en avant ?",
-    choices: [
-      "Remplacer la terre par un gel nutritif",
-      "Une solution globale : mesures en temps réel, analyse et conseils ludiques",
-      "Vendre des plantes génétiquement modifiées (OGM) adaptées au salon",
-      "N’utiliser aucun serveur : tout se fait hors ligne, sans synchronisation",
+      "Les agriculteurs professionnels en zone rurale",
+      "Les jeunes actifs urbains (20-35 ans) vivant en appartement",
+      "Les retraités passionnés de jardinage extérieur",
+      "Les entreprises de paysagisme pour les parcs publics"
     ],
     answerIndex: 1,
     explanation:
-      "Le projet insiste sur l’approche globale : collecte en temps réel, interprétation des données et restitution pédagogique/ludique, contrairement aux conseils génériques.",
+      "L'étude cible les 'plant-parents' urbains de 20 à 35 ans (66% des sondés), vivant souvent dans de petits espaces sans jardin et rencontrant des difficultés d'entretien par manque de temps ou de connaissances[cite: 1903, 1950, 2088]."
   },
   {
-    id: "capteurs",
-    question: "Quels paramètres sont mesurés par les capteurs (exemples cités) ?",
+    id: "innovation_pedagogique",
+    question: "Comment Floraly encourage-t-il l'engagement des utilisateurs sur le long terme ?",
     choices: [
-      "Pression atmosphérique, vitesse du vent, pluviométrie",
-      "Niveau sonore, qualité du Wi‑Fi, nombre de notifications",
-      "Humidité du sol, température, lumière",
-      "Taux de CO₂ uniquement",
+      "Par l'envoi quotidien de SMS de rappel obligatoires",
+      "Via un système de récompenses (points/badges) convertibles en graines gratuites",
+      "En bloquant l'accès à l'application si la plante meurt",
+      "En vendant uniquement des plantes artificielles sans entretien"
+    ],
+    answerIndex: 1,
+    explanation:
+      "Le projet mise sur l'andragogie ludique : les utilisateurs gagnent des points en aidant la communauté ou en relevant des défis, qu'ils peuvent échanger contre des sachets de graines ou des réductions[cite: 2103, 2274, 2277]."
+  },
+  {
+    id: "viabilite_economique",
+    question: "Sur quel mix de revenus repose le modèle économique de Floraly ?",
+    choices: [
+      "Uniquement sur la vente unique du pot en magasin",
+      "Sur la revente des données personnelles des utilisateurs",
+      "Vente du hardware, abonnements premium et recharges (graines/substrat)",
+      "Uniquement sur les subventions publiques et le crowdfunding"
     ],
     answerIndex: 2,
     explanation:
-      "Le rapport cite notamment l’humidité du sol, la température et la lumière comme données mesurées et envoyées pour analyse.",
+      "Le business plan prévoit un modèle récurrent solide combinant la vente de biens (packs standard/premium), des services (abonnements appli) et des ventes additionnelles de consommables[cite: 2814, 2884, 3137]."
   },
   {
-    id: "fonctionnement",
-    question: "Dans quel ordre se déroule le fonctionnement global ?",
+    id: "eco_conception",
+    question: "Quel est l'objectif majeur de la démarche d'éco-conception de Floraly ?",
     choices: [
-      "Le serveur invente des données → les capteurs les affichent",
-      "L’utilisateur arrose → l’application mesure → le capteur confirme",
-      "La boutique envoie des notifications → les capteurs démarrent",
-      "Capteurs → serveur → analyse → alertes/conseils",
+      "Utiliser des composants électroniques jetables après usage",
+      "Privilégier une structure modulaire pour faciliter la réparation et le recyclage",
+      "Produire le maximum de pièces en plastique non recyclable",
+      "Supprimer totalement l'usage de l'eau pour les plantes"
     ],
-    answerIndex: 3,
+    answerIndex: 1,
     explanation:
-      "Le flux décrit est : mesure par capteurs IoT, envoi au serveur, analyse, puis alertes et informations en temps réel.",
+      "Floraly intègre l'éco-conception via une structure modulaire permettant de remplacer les éléments, l'utilisation de matériaux recyclables et une sensibilisation à la gestion raisonnée de l'eau[cite: 2301, 2414, 2415]."
   },
   {
-    id: "arrosage",
-    question: "Quelle solution d’arrosage est retenue et quelle option est proposée en cas d’absence ?",
+    id: "architecture_technique",
+    question: "Pourquoi l'équipe a-t-elle choisi une architecture 'monorepo' avec TypeScript ?",
     choices: [
-      "Arrosage automatique par capillarité, sans option",
-      "Arrosage uniquement par brumisation, + chauffage intégré",
-      "Aucun arrosage, les plantes sont artificielles",
-      "Arrosage classique + option kit goutte-à-goutte en cas d’absence",
+      "Pour mélanger volontairement le code client et le code serveur",
+      "Pour garantir une continuité logique et faciliter l'évolution du système IoT",
+      "Parce que c'est le seul langage compatible avec les capteurs",
+      "Pour limiter la sécurité des fichiers envoyés par les utilisateurs"
     ],
-    answerIndex: 2,
+    answerIndex: 1,
     explanation:
-      "Le rapport mentionne un arrosage classique au quotidien, et la possibilité d’ajouter un kit goutte-à-goutte lors des absences (vacances).",
+      "Le choix du TypeScript de bout en bout et d'une séparation stricte front/back permet de gérer efficacement les flux de données IoT tout en assurant une maintenance simplifiée[cite: 2692, 2696, 2707]."
   },
   {
-    id: "conformite",
-    question:
-      "Quelles contraintes/points de conformité sont cités pour une solution connectée en Europe ?",
+    id: "prix_psychologique",
+    question: "Comment le prix de vente a-t-il été ajusté par rapport à l'étude de marché ?",
     choices: [
-      "Aucune contrainte si le produit est vendu en ligne",
-      "Uniquement une licence musicale pour l’application",
-      "Seulement une assurance habitation",
-      "CE + cybersécurité + RGPD",
+      "Il a été fixé à 300 € pour viser un marché de luxe",
+      "Il est aligné sur le prix psychologique (30-70 €) grâce à une variante sans écran",
+      "Le produit est donné gratuitement contre un abonnement de 50 €/mois",
+      "Le prix est identique pour tous les canaux, sans marge commerciale"
     ],
-    answerIndex: 3,
+    answerIndex: 1,
     explanation:
-      "Le rapport évoque le marquage CE (sécurité, conformité électrique/EMC), des exigences liées à la cybersécurité, et le RGPD pour la collecte/traitement de données.",
-  },
+      "L'étude a révélé que 90% des sondés voulaient un kit entre 30 et 70 €. Floraly a donc optimisé son coût de revient avec une version 'standard' sans écran pour répondre à cette attente[cite: 1911, 2146, 2206]."
+  }
 ];
 
 function clamp(n, min, max) {
